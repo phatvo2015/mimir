@@ -1,19 +1,33 @@
 package main
 
 import (
-    "fmt"
-    "net/http"
-    "os"
+  "log"
+  "fmt"
+  "net/http"
+  "os"
 )
 
-func main() {
-    http.HandleFunc("/", hello)
-    fmt.Println("listening...")
-    err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
-    if err != nil {
-      panic(err)
-    }
+func determineListenAddress() (string, error) {
+  port := os.Getenv("PORT")
+  if port == "" {
+    return "", fmt.Errorf("$PORT not set")
+  }
+  return ":" + port, nil
 }
-func hello(res http.ResponseWriter, req *http.Request) {
-    fmt.Fprintln(res, "hello, world")
+
+func hello(w http.ResponseWriter, r *http.Request) {
+  fmt.Fprintln(w, "Hello World")
+}
+
+func main() {
+  addr, err := determineListenAddress()
+  if err != nil {
+    log.Fatal(err)
+  }
+
+  http.HandleFunc("/", hello)
+  log.Printf("Listening on %s...\n", addr)
+  if err := http.ListenAndServe(addr, nil); err != nil {
+    panic(err)
+  }
 }
