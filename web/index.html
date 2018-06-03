@@ -6,20 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Manage your tasks">
     <meta name="author" content="Nguyen Tien Hung - Vo Tan Phat">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icon16x16.png">
+    <!-- icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Mimir">
+    <meta name="application-name" content="Mimir">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>Mimir</title>
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
+    
     <!-- script -->
-    <script src="js/jquery/jquery.min.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>
-    <script src="js/variable.js"></script>
-    <script src="js/function.js"></script> 
 
 </head>
 <body>
-    
+    <div class="main-wrapper">
+        <div class="left-sidebar">
+            <div class="logo">
+                <div class="container">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <img src="icon/logo.png" alt="homepage">
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="container dashboard">
+                <div class="row">
+                    <a class="btn active" href="index.html">
+                        <i class="fa fa-columns text-white"></i>
+                        <span>dashboard</span>
+                        
+                    </a>
+                    
+                    
+                </div>
+            </div>
+            <div class="container ">
+                <div class="horizontal-line">
+
+                </div>
+            </div>
+            <div class="container task">
+                <ul id="left-sidebar-task">
+                    <li>
+                        <a class="btn" href="#">
+                            <i class="fa fa-bars text-white"></i>
+                            <span>Groceries</span>
+                            <div class="process circle-100"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn" href="#">
+                            <i class="fa fa-bars text-white"></i>
+                            <span>Groceries</span>
+                            <div class="process circle-50"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn" href="#">
+                            <i class="fa fa-bars text-white"></i>
+                            <span>Groceries</span>
+                            <div class="process circle-0"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="header">
+                <div class="profile">
+                    
+                    <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/users/saitama.png" alt="user" class="profile-pic" /></a>
+                    <div class="dropdown-menu dropdown-menu-right animated zoomIn">
+                        <ul class="dropdown-user">
+                            <li><a href="#"><i class="ti-user"></i> Profile</a></li>
+                            <li><a href="#"><i class="ti-wallet"></i> Balance</a></li>
+                            <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+                            <li><a href="#"><i class="ti-settings"></i> Setting</a></li>
+                            <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>                
+            </div>
+            <div class="content">
+                
+            </div>
+        </div>
+    </div>
 </body>
-<script src="js/app.js"></script>
 </html>

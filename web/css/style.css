@@ -1,0 +1,289 @@
+@import url(../icon/font-awesome/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+html{
+    height: 100%;
+}
+
+body{
+    background: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+}
+
+.left-sidebar{
+    color: #ffffff;
+
+    background: #ff522f;
+    background: -moz-linear-gradient(left, #ff522f 0%, #fb6329 54%, #f77524 76%, #f3891e 100%);
+    background: -webkit-linear-gradient(left, #ff522f 0%,#fb6329 54%,#f77524 76%,#f3891e 100%);
+    background: linear-gradient(to right, #ff522f 0%,#fb6329 54%,#f77524 76%,#f3891e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff522f', endColorstr='#f3891e',GradientType=1 );
+
+    position: absolute;
+    margin: 0 0;
+    height: 100%;
+    width: 255px;
+
+    -webkit-box-shadow: 5px 0 51px 5px rgba(0,0,0,0.05);
+    box-shadow: 5px 0 51px 5px rgba(0,0,0,0.05);
+}
+
+.left-sidebar .logo .container .logo-icon {
+    margin: auto;
+    padding: 10px 10px;
+    padding-left: 5px;
+}
+
+.left-sidebar .logo .container .logo-icon img{
+    height: 75%;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+}
+
+.left-sidebar .dashboard{
+    margin-top: 10px;
+}
+
+.left-sidebar .dashboard .row {
+    margin: auto;
+}
+
+.left-sidebar .dashboard .row .btn{
+    display: inline-flex;
+    font-size: 22px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.left-sidebar .dashboard .row .btn{
+    border-radius: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.left-sidebar .dashboard .row .btn i{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.left-sidebar .dashboard .row .btn span{
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+
+.left-sidebar .dashboard .btn:hover{
+    background: rgba(255,255,255,0.35);
+}
+
+.left-sidebar .dashboard .btn:focus, .btn:active{
+    background: rgba(255,255,255,0.2);
+    outline: none !important ;
+    box-shadow: none;
+}
+
+.active{
+    background: rgba(255,255,255,0.2);
+}
+
+.left-sidebar .container .horizontal-line{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 15px;
+    width: 60%;
+    background: rgba(255,255,255,0.6);
+    border-radius: 30px;
+}
+
+.left-sidebar .task{
+    margin: auto;
+    
+}
+
+.left-sidebar .task ul{
+    padding: 0;
+    margin-left: 5px;
+}
+
+.left-sidebar .task ul li{
+    list-style-type: none;
+}
+
+.left-sidebar .task ul li a{
+    margin-bottom:5px;
+    border-radius: 17px;
+    width:100%;
+    font-size: 20px;
+    color: #ffffff;
+    display: inline-flex;
+    padding-left: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.left-sidebar .task ul li a i{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.left-sidebar .task ul li a span{
+    padding-left: 15px;
+}
+
+.left-sidebar .task ul li a:hover{
+    background: rgba(255,255,255,0.35);
+}
+
+.left-sidebar .task ul li a:focus, .left-sidebar .task ul li a:active{
+    background: rgba(255,255,255,0.2);
+    outline: none !important ;
+    box-shadow: none;
+}
+
+.left-sidebar .task ul li a .process{
+    margin-top: 3px;
+    margin-left: auto;
+}
+
+.circle-100{
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/process/circle-100.svg);
+    background-repeat: no-repeat;
+    background-size: 160px;
+}
+.circle-90{
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/process/circle-90.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;   
+}
+.circle-80{
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/process/circle-80.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;   
+}
+.circle-70{
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/process/circle-70.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;   
+}
+.circle-60{
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/process/circle-60.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;   
+}
+.circle-50{
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/process/circle-50.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;   
+}
+.circle-40{
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/process/circle-40.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;   
+}
+.circle-30{
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/process/circle-30.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;   
+}
+.circle-20{
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/process/circle-20.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;   
+}
+.circle-10{
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/process/circle-10.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;   
+}
+.circle-0{
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/process/circle-0.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;   
+}
+
+.page-wrapper{
+    position:relative;
+    top:0%;
+    left:255px;
+    height:100%;
+    width:80%
+}
+
+.page-wrapper .header{
+    position: relative;
+    background: #ffffff;
+    padding: 5px 0;
+    margin: auto;
+}
+
+.page-wrapper .header .profile {
+    margin-left: auto;
+}
+
+.page-wrapper .header .profile-pic{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.page-wrapper .content{
+    background: #ffffff;
+    position: relative;
+    min-height: 100% !important;
+    height: 100%;
+}
